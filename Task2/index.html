@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Future - Together We Can</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary-color: #2ecc71;
+            --secondary-color: #27ae60;
+            --text-color: #2c3e50;
+            --light-bg: #f9f9f9;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            position: fixed;
+            width: 100%;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                      url('https://images.unsplash.com/photo-1497436072909-60f360e1d4b1') center/cover;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: var(--secondary-color);
+        }
+
+        .section {
+            padding: 100px 20px;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 36px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .initiatives {
+            background: var(--light-bg);
+        }
+
+        .initiatives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .initiative-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .initiative-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .initiative-content {
+            padding: 20px;
+        }
+
+        .footer {
+            background: var(--text-color);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">EcoFuture</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#stats">Impact</a>
+                <a href="#initiatives">Initiatives</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Building a Sustainable Future Together</h1>
+            <p>Join us in our mission to create a greener, cleaner, and more sustainable world for future generations.</p>
+            <a href="#initiatives" class="cta-button">Explore Our Initiatives</a>
+        </div>
+    </section>
+
+    <section id="stats" class="section">
+        <div class="section-container">
+            <h2 class="section-title">Our Global Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">1M+</div>
+                    <p>Trees Planted</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50K</div>
+                    <p>Tons of CO2 Reduced</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100+</div>
+                    <p>Community Projects</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10K+</div>
+                    <p>Active Volunteers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="initiatives" class="section initiatives">
+        <div class="section-container">
+            <h2 class="section-title">Our Key Initiatives</h2>
+            <div class="initiatives-grid">
+                <div class="initiative-card">
+                    <div class="initiative-image" style="background-image: url('https://images.unsplash.com/photo-1497436072909-60f360e1d4b1')"></div>
+                    <div class="initiative-content">
+                        <h3>Reforestation Projects</h3>
+                        <p>Restoring forests worldwide to combat climate change and preserve biodiversity.</p>
+                    </div>
+                </div>
+                <div class="initiative-card">
+                    <div class="initiative-image" style="background-image: url('https://images.unsplash.com/photo-1497436072909-60f360e1d4b1')"></div>
+                    <div class="initiative-content">
+                        <h3>Clean Energy</h3>
+                        <p>Supporting the transition to renewable energy sources for a sustainable future.</p>
+                    </div>
+                </div>
+                <div class="initiative-card">
+                    <div class="initiative-image" style="background-image: url('https://images.unsplash.com/photo-1497436072909-60f360e1d4b1')"></div>
+                    <div class="initiative-content">
+                        <h3>Waste Reduction</h3>
+                        <p>Implementing innovative solutions to reduce waste and promote recycling.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="section-container">
+            <h2>Join Our Mission</h2>
+            <p>Connect with us on social media and be part of the change</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animate stats when in view
+        const stats = document.querySelectorAll('.stat-number');
+        const animateStats = () => {
+            stats.forEach(stat => {
+                const rect = stat.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                    stat.style.animation = 'countUp 2s ease-out forwards';
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateStats);
+    </script>
+</body>
+</html>
